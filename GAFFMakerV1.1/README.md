@@ -8,7 +8,7 @@ bash GAFFMaker.sh <path_to_protein&ligands> <output_path>
 Note: All ligands and protein should be out in the same folder; the name should contain `_<pdbid>_ligand_` and `_<pdbid>_protein_`
 
 ## Requirement 
-**GROMACS** version:     2024.2
+**GROMACS** Version:     2024.2
 
 **AmberTool** Version Higher than V20
 
