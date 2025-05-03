@@ -2,6 +2,8 @@
 
 LigTraj is a Python package for ligand trajectory analysis including RMSD, contact analysis, and covariance analysis etc.
 
+And the GAFFMaker tool is used to streamline the process of setting up simulation files for ligand-protein system molecular dynamics(MD) simulation.
+
 ## Installation
 Download the package, enter `LigTraj`, then use `pip` for installation
 ```bash
