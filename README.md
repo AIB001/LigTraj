@@ -3,7 +3,7 @@
 LigTraj is a Python package for ligand trajectory analysis including RMSD, contact analysis, and covariance analysis etc.
 
 ## Installation
-Download the package, enter `LigTraj_v1.1`, then use `pip` for installation
+Download the package, enter `LigTraj`, then use `pip` for installation
 ```bash
 pip install -e .
 ```
