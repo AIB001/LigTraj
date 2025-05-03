@@ -1,0 +1,8 @@
+mdtraj
+numpy
+pandas
+matplotlib
+networkx
+rdkit
+tqdm
+scipy
