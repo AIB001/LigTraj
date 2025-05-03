@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usage:
-# bash GAFFMaker.sh <structure_input_directory/> <simulation_file_output_director> <squence name>
+# bash GAFFMaker.sh <structure_input_directory/> <simulation_file_output_director> <squence name> <expected_run_time>
 # e.g. GAFFMaker.sh <structure_input_directory/> quick 12
 
 #########################################
