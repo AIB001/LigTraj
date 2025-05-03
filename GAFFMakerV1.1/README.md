@@ -7,5 +7,15 @@ bash GAFFMaker.sh <path_to_protein&ligands> <output_path>
 ````
 Note: All ligands and protein should be out in the same folder; the name should contain `_<pdbid>_ligand_` and `_<pdbid>_protein_`
 
+## Requirement 
+GROMACS version:     2024.2
+
+AmberTools Version Higher than V20
+
+````bash
+conda install -c conda-forge ambertools=23
+````
+
+
 ## Data Access
 We strongly recommend you to obtain the data from [PDB Binder](https://www.pdbbind-plus.org.cn/)
