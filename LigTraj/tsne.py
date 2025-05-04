@@ -77,7 +77,6 @@ def compute_and_plot_tsne(topol, traj, resname="LIG", feature_type='distances',
     else:
         raise ValueError("feature_type must be 'coordinates' or 'distances'")
 
-    # 标准化
     scaler = StandardScaler()
     features = scaler.fit_transform(features)
 
@@ -85,17 +84,14 @@ def compute_and_plot_tsne(topol, traj, resname="LIG", feature_type='distances',
     tsne = TSNE(n_components=2, perplexity=perplexity, n_iter=n_iter, random_state=42)
     embedding = tsne.fit_transform(features)
 
-    # 归一化
     scaler_tsne = MinMaxScaler()
     embedding = scaler_tsne.fit_transform(embedding)
 
-    # 计算熵
     kde = gaussian_kde(embedding.T)
     density = kde(embedding.T)
     entropy = -np.mean(np.log(density + 1e-10))
     print(f"Conformational Entropy: {entropy:.2f}")
 
-    # 绘图
     plt.figure(figsize=(8, 6))
     sc = plt.scatter(embedding[:, 0], embedding[:, 1],
                      c=np.arange(len(t)), cmap='viridis', s=8, alpha=0.8)
