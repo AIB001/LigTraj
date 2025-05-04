@@ -100,8 +100,15 @@ print("All analyses completed.")
 - AmberTool recommonded version higher than V20
 
 ## Demo
+### TrajAnalysis
 ![ligand_rmsd](https://github.com/user-attachments/assets/d5999e30-b60f-492c-8cf8-27ac240bcecc)
 ![ligand_residue_contact_network](https://github.com/user-attachments/assets/0d3cec58-48da-474c-9ccc-4673dc5a3d09)
 ![ligand_contact_frequency](https://github.com/user-attachments/assets/a3117df8-312c-48bb-ac1a-0d8c6227f467)
 ![covariance_matrix](https://github.com/user-attachments/assets/c7999b11-0992-4ca7-b5f6-9fa410313e31)
+### Graph
+![Curvature_polar_plot_euclidean](https://github.com/user-attachments/assets/4fbb31d2-5909-41be-ba29-73a95af95236)
+![Curvature_polar_plot_geodesic](https://github.com/user-attachments/assets/2b67f1e2-f635-44f2-ae48-7c77103aaefa)
+![graph_ensemble](https://github.com/user-attachments/assets/c55306dc-2c57-4ea3-9e1f-b8d525763867)
+
+
 
