@@ -96,6 +96,7 @@ print("All analyses completed.")
 - tqdm
 - scipy
 - sklearn
+- GROMACS recommended version: 2024.2
 
 ## Demo
 ![ligand_rmsd](https://github.com/user-attachments/assets/d5999e30-b60f-492c-8cf8-27ac240bcecc)
