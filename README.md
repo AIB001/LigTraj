@@ -24,11 +24,6 @@ topol = os.path.join(base_dir, "GMX_PROLIG_MD", "solv_ions.gro")
 traj = os.path.join(base_dir, "GMX_PROLIG_MD", "prod", "md_aligned.xtc")
 sdf = os.path.join(base_dir, "GMX_PROLIG_MD", "v2020_3tiy_ligand_1746191494002.sdf")
 
-
-# topol = r".\GMX_PROLIG_MD\solv_ions.gro"
-# traj = r".\GMX_PROLIG_MD\prod\md_aligned.xtc"
-# sdf = r".\GMX_PROLIG_MD\v2020_3tiy_ligand_1746191494002.sdf"
-
 ##################################
 # Part 1. Traj Analysis Example
 ##################################
