@@ -13,12 +13,82 @@ pip install -e .
 ## Usage
 
 ```python
-import LigTraj
-from LigTraj import TrajAnalysis as ta
 
-ta.rmsd("topol.gro", "traj.xtc", resname="LIG")
-ta.contact("topol.gro", "traj.xtc", "ligand.sdf", resname="LIG", n_frames=50)
-ta.covariance("topol.gro", "traj.xtc", resname="LIG")
+from LigTraj import TrajAnalysis as ta
+from LigTraj import Graph
+import os
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+topol = os.path.join(base_dir, "GMX_PROLIG_MD", "solv_ions.gro")
+traj = os.path.join(base_dir, "GMX_PROLIG_MD", "prod", "md_aligned.xtc")
+sdf = os.path.join(base_dir, "GMX_PROLIG_MD", "v2020_3tiy_ligand_1746191494002.sdf")
+
+
+# topol = r".\GMX_PROLIG_MD\solv_ions.gro"
+# traj = r".\GMX_PROLIG_MD\prod\md_aligned.xtc"
+# sdf = r".\GMX_PROLIG_MD\v2020_3tiy_ligand_1746191494002.sdf"
+
+##################################
+# Part 1. Traj Analysis Example
+##################################
+
+print("Running t-SNE analysis (SE3 invariant, coordinates)...")
+ta.tsne(topol, traj, resname="LIG", feature_type="coordinates", se3_invariant=True)
+
+print("Running RMSD analysis...")
+ta.rmsd(topol, traj, resname="LIG")
+
+print("Running Contact analysis...")
+ta.contact(topol, traj, sdf, resname="LIG", distance_cutoff=0.4, n_frames=50)
+
+print("Running Covariance analysis...")
+ta.covariance(topol, traj, resname="LIG")
+
+##################################
+# Part 2. Graph Generate Test
+##################################
+
+print("Building Graph ensemble...")
+Graph.build(topol, traj, sdf, resname="LIG", n_frames=10)
+
+##################################
+# Part 3. Graph Feature Embedding Test 
+##################################
+
+print("Generating MaSIF embeddings...")
+Graph.feature(topol, traj, sdf, resname="LIG", n_frames=10)
+
+
+# print("Running MaSIF geodesic embedding...")
+# Graph.masif_embedding(topol, traj, sdf, resname="LIG", n_frames=20)
+
+##################################
+# Part 4. MaSIF Embedding
+##################################
+
+print("Running MaSIF-style geodesic embedding (Euclidean distance)...")
+Graph.masif_embedding(
+    topol, traj, sdf,
+    resname="LIG",
+    cutoff=0.4,
+    n_frames=10,
+    distance_mode="euclidean"
+)
+
+print("Running MaSIF-style geodesic embedding (Geodesic distance)...")
+Graph.masif_embedding(
+    topol, traj, sdf,
+    resname="LIG",
+    cutoff=0.4,
+    n_frames=10,
+    distance_mode="geodesic"
+)
+
+
+##################################
+print("All analyses completed.")
+
 ```
 
 ## Requirements
