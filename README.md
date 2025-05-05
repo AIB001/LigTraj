@@ -1,6 +1,8 @@
 # LigTraj V1.1 -- By A.I.B.
 
 LigTraj is a Python package for ligand trajectory analysis including RMSD, contact analysis, and covariance analysis etc. Graph module in LigTraj is designed to generate feature of MD traj which can be used in further deep-learning or machine learning embedding part. Recent updated feature used for embedding includes MaSIF, distance-contact graph, conformationla ensamble graph etc. 
+![726cdd7e513e76386b2c0755fb1ca5c](https://github.com/user-attachments/assets/3a7103c1-4e40-4498-82a1-d6a325c00f18)
+
 
 And the GAFFMaker tool is used to streamline the process of setting up simulation files for ligand-protein system molecular dynamics(MD) simulation.
 
