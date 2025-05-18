@@ -11,7 +11,7 @@ And the GAFFMaker tool is used to streamline the process of setting up simulatio
 Download the package, enter `LigTraj`, then use `pip` for installation
 ```bash
 git clone https://github.com/aib001/LigTraj.git #you can use ssh for a quicker fetch
-cd LigTraj
+cd LigTrajV1.3
 pip install -e .
 ```
 
