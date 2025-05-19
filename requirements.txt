@@ -6,3 +6,4 @@ networkx
 rdkit
 tqdm
 scipy
+torch
