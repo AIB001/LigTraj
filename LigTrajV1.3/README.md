@@ -1,6 +1,6 @@
-# LigTraj V1.1 -- By A.I.B.
+# LigTraj V1.3 -- By A.I.B.
 
-LigTraj is a Python package for ligand trajectory analysis including RMSD, contact analysis, and covariance analysis.
+LigTraj is a Python package for ligand trajectory analysis including RMSD, contact analysis, and covariance analysis etc.
 
 ## Installation
 
