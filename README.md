@@ -1,4 +1,15 @@
-# LigTraj V1.1 -- By A.I.B.
+# LigTraj V1.3 -- By A.I.B.
+---------------------------------------------------------------------
+## V1.3 Update Feature
++ Adjust the framework
++ GAFF_Maker is now available through python script:
+  ```python
+  from LigTraj import GAFF_Maker as GAM
+  model=GAM.GAFF_Maker(protein_path, ligand_path, output_path, overwrite=False)
+  model.run
+  ```
++ Add 4D-fingerprint module 
+---------------------------------------------------------------------
 
 LigTraj is a Python package for ligand trajectory analysis including RMSD, contact analysis, and covariance analysis etc. Graph module in LigTraj is designed to generate feature of MD traj. Recent updated feature used for embedding includes MaSIF, distance-contact graph, conformationla ensamble etc. 
 
