@@ -205,8 +205,9 @@ The workflow for setting up and running protein-ligand MD simulations:
 
 2. **Generate System with GAFFMaker**:
    ```python
-   from LigTraj import GAFF_Maker as GAM
-   GAM.GAFF_Maker("protein.pdb", "ligand.mol2", "system_dir")
+from LigTraj import GAFF_Maker as GAM
+model=GAM.GAFF_Maker(protein_path, ligand_path, output_path, overwrite=False)
+model.run()
    ```
 
 3. **Run Simulation with GROMACS**:
