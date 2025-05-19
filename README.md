@@ -8,7 +8,8 @@
   model=GAM.GAFF_Maker(protein_path, ligand_path, output_path, overwrite=False)
   model.run()
   ```
-+ Add 4D-fingerprint module 
++ Add 4D-fingerprint module
++ LigTraj Molecular Dynamic Trajectory Database: [http://ligtraj.org](http://ligtraj.org)
 ---------------------------------------------------------------------
 
 LigTraj is a Python package for ligand trajectory analysis including RMSD, contact analysis, and covariance analysis etc. Graph module in LigTraj is designed to generate feature of MD traj. Recent updated feature used for embedding includes MaSIF, distance-contact graph, conformational ensemble etc. 
