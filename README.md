@@ -1,6 +1,6 @@
 # LigTraj V1.3 -- By A.I.B.
 ---------------------------------------------------------------------
-## V1.3 Update Feature
+## V1.3 Update Feature -- May 19, 2025
 + Adjust the framework
 + GAFF_Maker is now available through python script:
   ```python
