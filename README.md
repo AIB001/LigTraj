@@ -6,7 +6,7 @@
   ```python
   from LigTraj import GAFF_Maker as GAM
   model=GAM.GAFF_Maker(protein_path, ligand_path, output_path, overwrite=False)
-  model.run
+  model.run()
   ```
 + Add 4D-fingerprint module 
 ---------------------------------------------------------------------
